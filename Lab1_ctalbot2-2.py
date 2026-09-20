@@ -6,13 +6,13 @@ from rectangle import calc_area as rectangle_area
 Since both of these modules include a function named "calc_area", we cannot call "calc_area" in this file without using aliases
 """
 while True:
-    print("Geometry Calculator")
+    print("\nGeometry Calculator")
     print("\n1. Calculate Circle Area")
     print("\n2. Calculate Circle Circumference")
     print("\n3. Calculate Rectangle Area")
     print("\n4. Calculate Rectangle Perimeter")
     print("\n5. Exit")
-    choice = input("Enter your choice (1-5): ")
+    choice = input("\nEnter your choice (1-5): ")
     if choice == "1":
         radius = int(input("Enter the radius of your circle "))
         print(f"The area of the circle is {circle_area(radius)}")
@@ -27,4 +27,6 @@ while True:
         width = int(input("Enter the width of your rectangle "))
         height = int(input("Enter the height of your rectangle "))
         print(f"The perimeter of your rectangle is {rectangle.calc_perimeter(width, height)}")
-    break
+    elif choice == "5":
+        break
+    input("Press enter to continue...")
