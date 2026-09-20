@@ -5,9 +5,7 @@ from rectangle import calc_area as rectangle_area
 """ 
 Since both of these modules include a function named "calc_area", we cannot call "calc_area" in this file without using aliases
 """
-finished_calculate = False
-
-while finished_calculate == False:
+while True:
     print("Geometry Calculator")
     print("\n1. Calculate Circle Area")
     print("\n2. Calculate Circle Circumference")
@@ -18,4 +16,4 @@ while finished_calculate == False:
     if choice == "1":
         radius = int(input("Enter the radius of your circle "))
         print(f"The area of the circle is {circle_area(radius)}")
-    finished_calculate = True
+    break
