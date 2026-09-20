@@ -14,4 +14,8 @@ while finished_calculate == False:
     print("\n3. Calculate Rectangle Area")
     print("\n4. Calculate Rectangle Perimeter")
     print("\n5. Exit")
+    choice = input("Enter your choice (1-5): ")
+    if choice == "1":
+        radius = int(input("Enter the radius of your circle "))
+        print(f"The area of the circle is {circle_area(radius)}")
     finished_calculate = True
